@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function Home() {
   const [value, setValue] = useState("$500 - $10,000");
   return (
-    <Section>
+    <Section id="#">
       <div className="background">
         <img src={HeroImage} alt="Hero" />
       </div>
