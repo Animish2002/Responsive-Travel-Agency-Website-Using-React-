@@ -124,7 +124,8 @@ const Section = styled.section`
       }
       .planner {
         position: initial;
-        margin: 2rem;
+        margin: 0rem;
+        margin-top: 1rem;
         form {
           align-items: flex-start;
           flex-direction: column;

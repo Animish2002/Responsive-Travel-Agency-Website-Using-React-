@@ -1,21 +1,21 @@
-import React, { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Services from './components/Services';
-import Destinations from './components/Destinations';
-import Offer from './components/Offer';
-import Tours from './components/Tours';
-import Testimonial from './components/Testimonial';
-import DownloadApp from './components/DownloadApp';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import React, { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Services from "./components/Services";
+import Destinations from "./components/Destinations";
+import Offer from "./components/Offer";
+import Tours from "./components/Tours";
+import Testimonial from "./components/Testimonial";
+import DownloadApp from "./components/DownloadApp";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   useEffect(() => {
     // Remove hash from URL if it exists
     const { hash, pathname, search } = window.location;
     if (hash) {
-      window.history.replaceState(null, '', `${pathname}${search}`);
+      window.history.replaceState(null, "", `${pathname}${search}`);
     }
 
     // Scroll to top of the page
@@ -23,7 +23,7 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <>
       <ScrollToTop />
       <Navbar />
       <Home />
@@ -34,6 +34,6 @@ export default function App() {
       <Testimonial />
       <DownloadApp />
       <Footer />
-    </div>
+    </>
   );
 }

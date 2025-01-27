@@ -22,6 +22,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', "Oxygen", "Ubuntu", "Cantarell", 'Fira Sans', 'Helvetica Neue', sans-serif;
   -webkit-flow-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    margin: 0 0rem;
+    margin-top: 2rem;
+  }
 }
 
